@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Flow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>My Cash flow</h1>
+    <table>
+      <tr>
+        <th class="black total" colspan="6">Total</th>
+      </tr>
+      <tr>
+        <th class="black">Incomes</th>
+        <td>400</td>
+        <td>500</td>
+        <td>1000</td>
+        <td>1500</td>
+        <td class="ccc" id="incomes"></td>
+      </tr>
+      <tr>
+        <th class="black">Expenses</th>
+        <td>55</td>
+        <td>109</td>
+        <td>490</td>
+        <td>300</td>
+        <td class="ccc" id="expenses"></td>
+       </tr>
+      <tr>
+        <tr>
+          <th class="black" colspan="5">Balance</th>
+          <td class="ccc" id="balance"></td>
+        </tr>
+    </table>
+    <h3>Values in the column <span>"Total"</span> came from a Javascript function.</h3>
+    <script src="cash-flow.js"></script>
+  </main>
+</body>
+</html>
