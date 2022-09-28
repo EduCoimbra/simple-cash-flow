@@ -20,15 +20,17 @@ function calculateBalance(){
   const total = calculateIncomes - calculateExpenses
 
   const itsOk = total > 0;
-  let balanceText = "negativo";
+  let balanceText = "negative";
 
   if(itsOk){
-    balanceText = "positivo";
+    balanceText = "positive";
+    let msg = document.getElementById("message");
+    msg.style.backgroundColor = "#53c253"
   }
 
   document.getElementById("incomes").innerHTML = calculateIncomes
   document.getElementById("expenses").innerHTML = calculateExpenses
   document.getElementById("balance").innerHTML = total
+  document.getElementById("message").innerHTML = `Your balance is ${balanceText}`
 }
-
 calculateBalance()

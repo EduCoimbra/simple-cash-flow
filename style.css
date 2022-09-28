@@ -50,3 +50,9 @@ span{
     transform: translateX();
   }
 }
+
+p{
+  color: rgb(255, 255, 255);
+  padding: 2px 8px;
+  border-radius: 5px;
+}
